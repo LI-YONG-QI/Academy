@@ -23,20 +23,22 @@ class Char {
 }
 ```
 
-# Class Game
+# Class
+
+## Game
 
 Method :
 
 - `fight(player: Player, level: Level): boolean ` 將原本的 Level 當中的 `fight` 移到此處，功能部分除了跟之前一樣的部分以外（玩家先攻），這次需要分出勝負才能離開 function，也就是怪物跟玩家有一方死亡
   - 若玩家死亡（life < 0）return false，反之 return true
 
-# Class Character
+## Character
 
 - 新增一個 `name` public property 在 constructor 當中
 - 把屬於 property 改動全部都放進 method 中，讓外部避免使用 `.` 來修改，存取部分還是直接使用 `.` 即可
   - `setLife(newLife: number)` 設定 `life`
 
-# Class Level
+## Level
 
 - 移除 `fight` method
 - 移除 `player` property
